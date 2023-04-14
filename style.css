@@ -49,7 +49,6 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
     background: var(--dark-text-clr);
-
 }
 
 /* bo dau mui ten input */
@@ -174,6 +173,10 @@ header .navbar ul li a:hover {
 header .navbar ul li a:focus {
     background: var(--primary-clr);
     color: var(--light-text-clr);
+}
+
+header .navbar ul li.active a {
+    background-color: var(--primary-clr);
 }
 
 
