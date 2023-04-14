@@ -208,3 +208,20 @@ document.getElementById("contact").addEventListener("submit", function () {
   document.getElementById("contact").reset();
 });
 
+// CALL API URL
+
+// const xhr = new XMLHttpRequest();
+// const url = 'http://localhost:1337/api/experiences';
+
+// xhr.open('GET', url, true);
+
+// xhr.onload = function () {
+//   if (this.status === 200) {
+//     const data = JSON.parse(this.responseText);
+//     console.log(data);
+//   } else {
+//     console.error('Error');
+//   }
+// };
+
+// xhr.send();
