@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Profile</title>
+        <!-- favicoin -->
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            sizes="16x16"
+            href="./img/favicon-profile/favicon-16x16.png"
+        />
+        <!-- font awesome cdn link  -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="./style.css" />
+        <!-- auto email -->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+    </head>
+    <body>
+        <!-- header section starts  -->
+        <header id="nav">
+            <div class="user" id="user">
+                <img
+                    src="https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.30808-1/337027768_2586322621510540_3725437478504082720_n.jpg?stp=dst-jpg_p320x320&_nc_cat=109&ccb=1-7&_nc_sid=7206a8&_nc_ohc=ZAmZnS9nEH4AX_LRsJ4&_nc_ht=scontent.fsgn5-8.fna&oh=00_AfDd4xBUnDgJbJDFSx_BUNbT1zmuRdWw-7TRy_T1l-nf5Q&oe=642FD08F"
+                    alt="ngô anh vũ"
+                />
+                <h3 class="name">ngô anh vũ</h3>
+                <p class="post">front end developer</p>
+            </div>
+
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="#home">trang chủ</a></li>
+                    <li><a href="#about">giới thiệu</a></li>
+                    <li><a href="#education">kinh nghiệm</a></li>
+                    <li><a href="#portfolio">dự án</a></li>
+                    <li><a href="#contact">liên hệ</a></li>
+                    <li>
+                        <a href="#" id="toggle-mode-btn">
+                            <ion-icon
+                                id="toggle-icon"
+                                name="moon-outline"
+                            ></ion-icon>
+                            <span id="text-mode">dark mode</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- header section ends -->
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <!-- home section starts  -->
+
+        <section class="home" id="home">
+            <h3>XIN CHÀO !</h3>
+            <h1>tôi là <span>vũ</span></h1>
+            <p>một lập trình viên Front End</p>
+            <a href="#about"
+                ><button class="btn">về tôi <i class="fas fa-user"></i></button
+            ></a>
+        </section>
+
+        <!-- home section ends -->
+
+        <!-- about section starts  -->
+
+        <section class="about" id="about">
+            <h1 class="heading"><span>về tôi</span></h1>
+
+            <div class="row">
+                <div class="info">
+                    <h3><span> tên : </span> ngô anh vũ</h3>
+                    <h3><span> tuổi : </span> 30</h3>
+                    <h3><span> trình độ : </span> đại học</h3>
+                    <h3><span> lĩnh vực : </span> front end developer</h3>
+                    <h3><span> ngôn ngữ : </span> tiếng anh</h3>
+                    <a href="./pdf/cv-vu.pdf" target="_blank" download="cv"
+                        ><button class="btn">
+                            tải về CV <i class="fas fa-download"></i></button
+                    ></a>
+                </div>
+
+                <div class="counter">
+                    <a href="#portfolio"
+                        ><div class="box">
+                            <span>1+</span>
+                            <h3>kinh nghiệm</h3>
+                        </div></a
+                    >
+
+                    <a href="#portfolio"
+                        ><div class="box">
+                            <span>5+</span>
+                            <h3>dự án</h3>
+                        </div></a
+                    >
+
+                    <a href="#portfolio"
+                        ><div class="box">
+                            <span>5+</span>
+                            <h3>khách hàng</h3>
+                        </div></a
+                    >
+
+                    <a href="#portfolio"
+                        ><div class="box">
+                            <span>2+</span>
+                            <h3>lĩnh vực</h3>
+                        </div></a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- about section ends -->
+
+        <!-- education section starts  -->
+
+        <section class="education" id="education">
+            <h1 class="heading"><span>quá trình học tập và làm việc</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2011</span>
+                    <h3>dược sĩ</h3>
+                    <div id="myList"></div>
+                    <p>Học dược sĩ tại trường đại học nguyễn tất thành</p>
+                </div>
+
+                <div class="box">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>2017</span>
+                    <h3>nhân viên kỹ thuật</h3>
+                    <p>
+                        làm việc tại công ty CP xuất nhập khẩu y tế TP.hồ chí
+                        minh
+                    </p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2022</span>
+                    <h3>công nghệ thông tin</h3>
+                    <p>
+                        Học công nghệ thông tin tại học viện bưu chính viễn
+                        thông
+                    </p>
+                </div>
+
+                <div class="box">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>2023</span>
+                    <h3>front end</h3>
+                    <p>Làm việc tại công ty fastboy marketing</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- education section ends -->
+
+        <!-- portfolio section starts  -->
+
+        <section class="portfolio" id="portfolio">
+            <h1 class="heading"><span>đã thiết kế</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <a href="./project-travel/index.html" target="_blank"
+                        ><img src="./img/project-1.jpeg" alt="project" title="Travel"
+                    /></a>
+                </div>
+
+                <div class="box">
+                    <a
+                        href="./project-eshop/eshop/blog-single-sidebar.html"
+                        target="_blank"
+                        ><img src="./img/project-2.webp" alt="project"
+                    /></a>
+                </div>
+
+                <div class="box">
+                    <a
+                        href="./project-cafe-shop/coffee-website/index.html"
+                        target="_blank"
+                        ><img src="./img/project-3.jpeg" alt="project"
+                    /></a>
+                </div>
+
+                <div class="box">
+                    <a href="https://yteco.vn/" target="_blank"
+                        ><img src="./img/project-4.jpeg" alt="project"
+                    /></a>
+                </div>
+
+                <div class="box">
+                    <a href="https://portal.ptit.edu.vn/" target="_blank"
+                        ><img src="./img/project-5.jpeg" alt="project"
+                    /></a>
+                </div>
+
+                <div class="box">
+                    <a href="https://viettelpost.com.vn/" target="_blank"
+                        ><img src="./img/project-6.webp" alt="project"
+                    /></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio section ends -->
+
+        <!-- contact section starts  -->
+
+        <section class="contact">
+            <h1 class="heading"><span>liên hệ</span></h1>
+
+            <div class="row">
+                <div class="content">
+                    <h3 class="title">liên hệ</h3>
+
+                    <div class="info">
+                        <h3>
+                            <a
+                                style="text-transform: lowercase"
+                                href="mailto:ngoanhvu110293@gmail.com"
+                                class="icon"
+                                rel="noopener noreferrer"
+                            >
+                                <i class="fas fa-envelope"></i
+                                >ngoanhvu110293@gmail.com</a
+                            >
+                        </h3>
+                        <h3>
+                            <a href="tel:0969872363"
+                                ><i class="fas fa-phone"></i>0969 872 363</a
+                            >
+                        </h3>
+                        <h3>
+                            <a
+                                href="https://goo.gl/maps/PCeroWrGVUpfTjPL9"
+                                target="_blank"
+                            >
+                                <i class="fas fa-map-marker-alt"></i>68 cách
+                                mạng tháng tám, P.võ thị sáu, quận 3, TP.HCM</a
+                            >
+                        </h3>
+                    </div>
+                </div>
+
+                <form
+                    id="contact"
+                    action="./project-travel/index.html"
+                    target="_blank"
+                    autocomplete="on"
+                >
+                    <input
+                        required
+                        id="name"
+                        class="box"
+                        type="text"
+                        minlength="2"
+                        maxlength="50"
+                        pattern="^[a-zA-Z\sàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹ]+$"
+                        name="name"
+                        placeholder="tên"
+                    />
+                    <span id="name-error"></span>
+                    <input
+                        id="email"
+                        class="box"
+                        type="email"
+                        placeholder="email"
+                        required
+                    />
+                    <span id="email-error"></span>
+
+                    <input
+                        id="phone"
+                        class="box"
+                        type="tel"
+                        pattern="[0-9]{10}"
+                        placeholder="điện thoại"
+                        required
+                    />
+                    <span id="phone-error"></span>
+
+                    <textarea
+                        id="message"
+                        class="box message"
+                        cols="30"
+                        rows="10"
+                        placeholder="nội dung"
+                    ></textarea>
+
+                    <button class="btn" id="btn-submit" type="submit">
+                        Gửi <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- contact section ends -->
+
+        <!-- scroll top button  -->
+
+        <a href="#home" class="top">
+            <img src="./img/scroll-top-img.png" alt="" />
+        </a>
+
+        <div id="products1"></div>
+
+        <!-- jquery cdn link  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- custom js file link  -->
+        <script src="./script.js"></script>
+        <!-- Thư viện React -->
+        <script src="https://unpkg.com/react/umd/react.development.js"></script>
+        <!-- Thư viện React-DOM -->
+        <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+        <!-- Thư viện IONICON -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>
