@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Profile</title>
+        <!-- favicoin -->
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            sizes="16x16"
+            href="./img/favicon-profile/favicon-16x16.png"
+        />
+        <!-- font awesome cdn link  -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="../style.css" />
+        <!-- auto email -->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+    </head>
+    <body>
+        <!-- header section starts  -->
+        <header id="nav">
+            <div class="user" id="user">
+                <img src="../img/avatar.jpg" alt="avatar" />
+                <h3 class="name">vu ngo</h3>
+                <p class="post">front end developer</p>
+            </div>
+
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="../index.html">vietnames</a></li>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">aubout me</a></li>
+                    <li><a href="#education">experience</a></li>
+                    <li><a href="#portfolio">projects</a></li>
+                    <li><a href="#contact">contacts</a></li>
+                    <li>
+                        <a href="#" id="toggle-mode-btn">
+                            <ion-icon
+                                id="toggle-icon"
+                                name="moon-outline"
+                            ></ion-icon>
+                            <span id="text-mode">dark mode</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- header section ends -->
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <!-- home section starts  -->
+
+        <section class="home" id="home">
+            <h3>hi !</h3>
+            <h1>I'm <span>vu</span></h1>
+            <p>a Front End programmer</p>
+            <a href="#about"
+                ><button class="btn">
+                    about me <i class="fas fa-user"></i></button
+            ></a>
+        </section>
+
+        <!-- home section ends -->
+
+        <!-- about section starts  -->
+
+        <section class="about" id="about">
+            <h1 class="heading"><span>about me</span></h1>
+
+            <div class="row">
+                <div class="info">
+                    <h3><span> name : </span> vu ngo</h3>
+                    <h3><span> field : </span> front end developer</h3>
+                    <h3><span> level : </span> university</h3>
+                    <h3><span> language : </span> english</h3>
+                    <a
+                        href="./pdf/Vu-Ngo-FrontEnd-Developer.pdf"
+                        target="_blank"
+                        ><button class="btn">
+                            download CV <i class="fas fa-download"></i></button
+                    ></a>
+                </div>
+
+                <div class="counter">
+                    <a href="#portfolio"
+                        ><div class="box">
+                            <span>1+</span>
+                            <h3>experience</h3>
+                        </div></a
+                    >
+
+                    <a href="#portfolio"
+                        ><div class="box">
+                            <span>5+</span>
+                            <h3>projects</h3>
+                        </div></a
+                    >
+
+                    <a href="#portfolio"
+                        ><div class="box">
+                            <span>5+</span>
+                            <h3>custommer</h3>
+                        </div></a
+                    >
+
+                    <a href="#portfolio"
+                        ><div class="box">
+                            <span>2+</span>
+                            <h3>field</h3>
+                        </div></a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- about section ends -->
+
+        <!-- education section starts  -->
+
+        <section class="education" id="education">
+            <h1 class="heading"><span>learning and working process</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span id="test">2011</span>
+                    <h3>pharmacist</h3>
+                    <div id="myList"></div>
+                    <p>Nguyen Tat Thanh University</p>
+                </div>
+
+                <div class="box">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>2017</span>
+                    <h3>IT staff</h3>
+                    <p>
+                        Ho Chi Minh City Medical Import Export Joint Stock
+                        Company
+                    </p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2022</span>
+                    <h3>information technology</h3>
+                    <p>Post and Telecommunications Institute of Technology</p>
+                </div>
+
+                <div class="box">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>2023</span>
+                    <h3>front end developer</h3>
+                    <p>fastboy marketing</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- education section ends -->
+
+        <!-- portfolio section starts  -->
+
+        <section class="portfolio" id="portfolio">
+            <h1 class="heading"><span>designed</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <a href="./project-travel/index.html" target="_blank"
+                        ><img
+                            src="./img/project-1.jpeg"
+                            alt="project"
+                            title="Travel"
+                    /></a>
+                </div>
+
+                <div class="box">
+                    <a
+                        href="./project-eshop/eshop/blog-single-sidebar.html"
+                        target="_blank"
+                        ><img src="./img/project-2.webp" alt="project"
+                    /></a>
+                </div>
+
+                <div class="box">
+                    <a
+                        href="./project-cafe-shop/coffee-website/index.html"
+                        target="_blank"
+                        ><img src="./img/project-3.jpeg" alt="project"
+                    /></a>
+                </div>
+
+                <div class="box">
+                    <a href="https://yteco.vn/" target="_blank"
+                        ><img src="./img/project-4.jpeg" alt="project"
+                    /></a>
+                </div>
+
+                <div class="box">
+                    <a href="https://portal.ptit.edu.vn/" target="_blank"
+                        ><img src="./img/project-5.jpeg" alt="project"
+                    /></a>
+                </div>
+
+                <div class="box">
+                    <a href="https://viettelpost.com.vn/" target="_blank"
+                        ><img src="./img/project-6.webp" alt="project"
+                    /></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio section ends -->
+
+        <!-- contact section starts  -->
+
+        <section class="contact">
+            <h1 class="heading"><span>contacs</span></h1>
+
+            <div class="row">
+                <div class="content">
+                    <h3 class="title">contacts</h3>
+
+                    <div class="info">
+                        <h3>
+                            <a
+                                style="text-transform: lowercase"
+                                href="mailto:ngoanhvu110293@gmail.com"
+                                class="icon"
+                                rel="noopener noreferrer"
+                            >
+                                <i class="fas fa-envelope"></i
+                                >ngoanhvu110293@gmail.com</a
+                            >
+                        </h3>
+                        <h3>
+                            <a href="tel:0969872363"
+                                ><i class="fas fa-phone"></i>0969 872 363</a
+                            >
+                        </h3>
+                        <h3>
+                            <a
+                                href="https://goo.gl/maps/PCeroWrGVUpfTjPL9"
+                                target="_blank"
+                            >
+                                <i class="fas fa-map-marker-alt"></i>Ho Chi Minh
+                                City
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+
+                <form
+                    id="contact"
+                    action="./project-travel/index.html"
+                    target="_blank"
+                    autocomplete="on"
+                >
+                    <input
+                        required
+                        id="name"
+                        class="box"
+                        type="text"
+                        minlength="2"
+                        maxlength="50"
+                        pattern="^[a-zA-Z\sàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹ]+$"
+                        name="name"
+                        placeholder="name"
+                    />
+                    <span id="name-error"></span>
+                    <input
+                        id="email"
+                        class="box"
+                        type="email"
+                        placeholder="email"
+                        required
+                    />
+                    <span id="email-error"></span>
+
+                    <input
+                        id="phone"
+                        class="box"
+                        type="tel"
+                        pattern="[0-9]{10}"
+                        placeholder="phone"
+                        required
+                    />
+                    <span id="phone-error"></span>
+
+                    <textarea
+                        id="message"
+                        class="box message"
+                        cols="30"
+                        rows="10"
+                        placeholder="message"
+                    ></textarea>
+
+                    <button class="btn" id="btn-submit" type="submit">
+                        Submit <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- contact section ends -->
+
+        <!-- scroll top button  -->
+
+        <a href="#home" class="top">
+            <img src="./img/scroll-top-img.png" alt="" />
+        </a>
+
+        <div id="products1"></div>
+
+        <!-- jquery cdn link  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- custom js file link  -->
+        <script src="./script.js"></script>
+        <!-- Thư viện React -->
+        <script src="https://unpkg.com/react/umd/react.development.js"></script>
+        <!-- Thư viện React-DOM -->
+        <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+        <!-- Thư viện IONICON -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>
