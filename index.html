@@ -1,281 +1,330 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
-    <title>Profile</title>
-</head>
-<body>
-
-    <main>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-md">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <h2>VU NGO</h2>
-                </a>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" tabindex="-1" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#project">Projects</a>
-                        </li>
-                    </ul>
-                    <span class="navbar-text">
-                        <div class="social-icon">
-                            <a href="#"><img src="img/nav-icon1.svg" alt="Icon"></a>
-                            <a href="#"><img src="img/nav-icon2.svg" alt="Icon"></a>
-                            <a href="#"><img src="img/nav-icon3.svg" alt="Icon"></a>
-                        </div>
-                        <button class="vvd" onclick="location.href='#connect';"><span>Let’s Connect</span></button>
-                    </span>
-                </div>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Profile</title>
+        <!-- favicoin -->
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            sizes="16x16"
+            href="./img/favicon-profile/favicon-16x16.png"
+        />
+        <!-- font awesome cdn link  -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="./style.css" />
+        <!-- auto email -->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+    </head>
+    <body>
+        <!-- header section starts  -->
+        <header id="nav">
+            <div class="user" id="user">
+                <h3 class="name">vu ngo</h3>
+                <p class="post">front end developer</p>
             </div>
-        </nav>
-        <!-- Navbar End -->
 
-        <!-- Banner -->
-        <section class="banner" id="home">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6 col-xl-7 wow fadeIn" data-wow-duration="1.5s">
-                        <span class="taglin">Welcome to my Portfolio</span>
-                        <h1>Creative Independent <span class="txt-rotate" data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'></span> based in.</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <button onclick="location.href='#connect';">Let’s Connect <i class="bi bi-arrow-right-circle"></i></button>
-                    </div>
-                    <div class="col-12 col-md-6 col-xl-5 wow zoomIn" data-wow-duration="1.5s">
-                        <img src="img/header-img.svg" alt="Image">
-                    </div>
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="./english/index.html">english</a></li>
+                    <li><a href="#home">trang chủ</a></li>
+                    <li><a href="#about">giới thiệu</a></li>
+                    <li><a href="#education">kinh nghiệm</a></li>
+                    <li><a href="#portfolio">dự án</a></li>
+                    <li><a href="#contact">liên hệ</a></li>
+                    <li>
+                        <a href="#" id="toggle-mode-btn">
+                            <ion-icon
+                                id="toggle-icon"
+                                name="moon-outline"
+                            ></ion-icon>
+                            <span id="text-mode">dark mode</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- header section ends -->
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <!-- home section starts  -->
+
+        <section class="home" id="home">
+            <h3>XIN CHÀO !</h3>
+            <h1>tôi là <span>vũ</span></h1>
+            <p>một lập trình viên Front End</p>
+            <a href="#about"
+                ><button class="btn">về tôi <i class="fas fa-user"></i></button
+            ></a>
+        </section>
+
+        <!-- home section ends -->
+
+        <!-- about section starts  -->
+
+        <section class="about" id="about">
+            <h1 class="heading"><span>về tôi</span></h1>
+
+            <div class="row">
+                <div class="info">
+                    <h3><span> tên : </span> ngô anh vũ</h3>
+                    <h3><span> lĩnh vực : </span> front end developer</h3>
+                    <h3><span> trình độ : </span> đại học</h3>
+                    <h3><span> ngôn ngữ : </span> tiếng anh</h3>
+                    <a
+                        href="./pdf/Vu-Ngo-FrontEnd-Developer.pdf"
+                        target="_blank"
+                        ><button class="btn">
+                            tải về CV <i class="fas fa-download"></i></button
+                    ></a>
+                </div>
+
+                <div class="counter">
+                    <a href="#portfolio"
+                        ><div class="box">
+                            <span>1+</span>
+                            <h3>kinh nghiệm</h3>
+                        </div></a
+                    >
+
+                    <a href="#portfolio"
+                        ><div class="box">
+                            <span>5+</span>
+                            <h3>dự án</h3>
+                        </div></a
+                    >
+
+                    <a href="#portfolio"
+                        ><div class="box">
+                            <span>5+</span>
+                            <h3>khách hàng</h3>
+                        </div></a
+                    >
+
+                    <a href="#portfolio"
+                        ><div class="box">
+                            <span>2+</span>
+                            <h3>lĩnh vực</h3>
+                        </div></a
+                    >
                 </div>
             </div>
         </section>
-        <!-- Banner End -->
 
-        <!-- Skills -->
-        <section class="skill" id="skills">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="skill-bx wow zoomIn" data-wow-duration="1.5s">
-                            <h2>Skills</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text.</p>
-                            <div class="owl-carousel owl-theme skill-slider">
-                                <div class="item">
-                                    <img src="img/meter1.svg" alt="Image">
-                                    <h5>Web Development</h5>
-                                </div>
-                                <div class="item">
-                                    <img src="img/meter2.svg" alt="Image">
-                                    <h5>Brand Identity</h5>
-                                </div>
-                                <div class="item">
-                                    <img src="img/meter3.svg" alt="Image">
-                                    <h5>Logo Design</h5>
-                                </div>
-                                <div class="item">
-                                    <img src="img/meter1.svg" alt="Image">
-                                    <h5>Web Development</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- about section ends -->
+
+        <!-- education section starts  -->
+
+        <section class="education" id="education">
+            <h1 class="heading"><span>quá trình học tập và làm việc</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span id="test">2011</span>
+                    <h3>dược sĩ</h3>
+                    <div id="myList"></div>
+                    <p>trường đại học nguyễn tất thành</p>
                 </div>
-            </div>
-            <img class="sdf" src="img/color-sharp.png" alt="Image">
-        </section>
-        <!-- Skills End -->
 
-        <!-- Projects -->
-        <section class="project" id="project">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 wow fadeIn" data-wow-duration="1.5s">
-                        <h2>Projects</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-                        <ul class="nav nav-pills mb-5 justify-content-center align-items-center id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Web Development</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Brand Identity</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Logo Design</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent wow slideInUp" data-wow-duration="1.5s">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                <div class="row">
-                                    <div class="col-12 col-sm-6 col-md-4">
-                                        <div class="proj-imgbx">
-                                            <img src="img/project-img1.png" alt="Image">
-                                            <div class="proj-txtx">
-                                                <h4>Business Startup</h4>
-                                                <span>Design & Development</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-md-4">
-                                        <div class="proj-imgbx">
-                                            <img src="img/project-img2.png" alt="Image">
-                                            <div class="proj-txtx">
-                                                <h4>Business Startup</h4>
-                                                <span>Design & Development</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-md-4">
-                                        <div class="proj-imgbx">
-                                            <img src="img/project-img3.png" alt="Image">
-                                            <div class="proj-txtx">
-                                                <h4>Business Startup</h4>
-                                                <span>Design & Development</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-md-4">
-                                        <div class="proj-imgbx">
-                                            <img src="img/project-img1.png" alt="Image">
-                                            <div class="proj-txtx">
-                                                <h4>Business Startup</h4>
-                                                <span>Design & Development</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-md-4">
-                                        <div class="proj-imgbx">
-                                            <img src="img/project-img2.png" alt="Image">
-                                            <div class="proj-txtx">
-                                                <h4>Business Startup</h4>
-                                                <span>Design & Development</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-md-4">
-                                        <div class="proj-imgbx">
-                                            <img src="img/project-img3.png" alt="Image">
-                                            <div class="proj-txtx">
-                                                <h4>Business Startup</h4>
-                                                <span>Design & Development</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                            </div>
-                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="box">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>2017</span>
+                    <h3>IT Satff</h3>
+                    <p>công ty CP xuất nhập khẩu y tế TP.hồ chí minh</p>
                 </div>
-            </div>
-            <img class="sdf2" src="img/color-sharp2.png" alt="Image">
-        </section>
-        <!-- Projects End -->
 
-        <!-- Get In Touch -->
-        <section class="contact" id="connect">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6 wow zoomIn" data-wow-duration="1.5s">
-                        <img src="img/contact-img.svg" alt="Image">
-                    </div>
-                    <div class="col-12 col-md-6 wow fadeIn" data-wow-duration="1.5s">
-                        <h2>Get In Touch</h2>
-                        <form action="">
-                            <div class="row">
-                                <div class="col-12 col-sm-6 px-1">
-                                    <input type="text" placeholder="First Name" required>
-                                </div>
-                                <div class="col-12 col-sm-6 px-1">
-                                    <input type="text" placeholder="Last Name">
-                                </div>
-                                <div class="col-12 col-sm-6 px-1">
-                                    <input type="email" placeholder="Email Address" required>
-                                </div>
-                                <div class="col-12 col-sm-6 px-1">
-                                    <input type="tel" placeholder="Phone No." required>
-                                </div>
-                                <div class="col-12 px-1">
-                                    <textarea rows="6" placeholder="Message"></textarea>
-                                    <button><span>Send</span></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2022</span>
+                    <h3>công nghệ thông tin</h3>
+                    <p>học viện công nghệ bưu chính viễn thông</p>
                 </div>
             </div>
         </section>
-        <!-- Get In Touch End -->
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12">
-                        <div class="newsletter-bx wow slideInUp" data-wow-duration="1.5s">
-                            <div class="row">
-                                <div class="col-12 col-md-6 col-xl-5">
-                                    <h3>Subscribe to our Newsletter<br> & Never miss latest updates</h3>
-                                </div>
-                                <div class="col-12 col-md-6 col-xl-7">
-                                    <form action="">
-                                        <div class="new-emil-bx">
-                                            <input type="email" placeholder="Email Address">
-                                            <button>Submit</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- education section ends -->
 
-                    <div class="col-12 col-sm-6">
-                        <h2>VU NGO</h2>
-                    </div>
-                    <div class="col-12 col-sm-6 text-center text-sm-end">
-                        <div class="social-icon">
-                            <a href="#"><img src="img/nav-icon1.svg" alt="Icon"></a>
-                            <a href="#"><img src="img/nav-icon2.svg" alt="Icon"></a>
-                            <a href="#"><img src="img/nav-icon3.svg" alt="Icon"></a>
-                        </div>
-                        <p>Copyright 2022. All Rights Reserved</p>
-                    </div>
+        <!-- portfolio section starts  -->
+
+        <section class="portfolio" id="portfolio">
+            <h1 class="heading"><span>đã thiết kế</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <a href="./project-travel/index.html" target="_blank"
+                        ><img
+                            src="./img/project-1.jpeg"
+                            alt="project"
+                            title="Travel"
+                    /></a>
+                </div>
+
+                <div class="box">
+                    <a
+                        href="./project-eshop/eshop/blog-single-sidebar.html"
+                        target="_blank"
+                        ><img src="./img/project-2.webp" alt="project"
+                    /></a>
+                </div>
+
+                <div class="box">
+                    <a
+                        href="./project-cafe-shop/coffee-website/index.html"
+                        target="_blank"
+                        ><img src="./img/project-3.jpeg" alt="project"
+                    /></a>
+                </div>
+
+                <div class="box">
+                    <a href="https://yteco.vn/" target="_blank"
+                        ><img src="./img/project-4.jpeg" alt="project"
+                    /></a>
+                </div>
+
+                <div class="box">
+                    <a href="https://portal.ptit.edu.vn/" target="_blank"
+                        ><img src="./img/project-5.jpeg" alt="project"
+                    /></a>
+                </div>
+
+                <div class="box">
+                    <a href="https://viettelpost.com.vn/" target="_blank"
+                        ><img src="./img/project-6.webp" alt="project"
+                    /></a>
                 </div>
             </div>
-        </footer>
-        <!-- Footer End -->
+        </section>
 
-    </main>
+        <!-- portfolio section ends -->
 
-    <!-- JS Files -->
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/sever.js"></script>
-</body>
+        <!-- contact section starts  -->
+
+        <section class="contact">
+            <h1 class="heading"><span>liên hệ</span></h1>
+
+            <div class="row">
+                <div class="content">
+                    <h3 class="title">liên hệ</h3>
+
+                    <div class="info">
+                        <h3>
+                            <a
+                                style="text-transform: lowercase"
+                                href="mailto:ngoanhvu110293@gmail.com"
+                                class="icon"
+                                rel="noopener noreferrer"
+                            >
+                                <i class="fas fa-envelope"></i
+                                >ngoanhvu110293@gmail.com</a
+                            >
+                        </h3>
+                        <h3>
+                            <a href="tel:0969872363"
+                                ><i class="fas fa-phone"></i>0969 872 363</a
+                            >
+                        </h3>
+                        <h3>
+                            <a
+                                href="https://goo.gl/maps/PCeroWrGVUpfTjPL9"
+                                target="_blank"
+                            >
+                                <i class="fas fa-map-marker-alt"></i>tp. hồ chí
+                                minh, việt nam
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+
+                <form
+                    id="contact"
+                    action="./project-travel/index.html"
+                    target="_blank"
+                    autocomplete="on"
+                >
+                    <input
+                        required
+                        id="name"
+                        class="box"
+                        type="text"
+                        minlength="2"
+                        maxlength="50"
+                        pattern="^[a-zA-Z\sàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹ]+$"
+                        name="name"
+                        placeholder="tên"
+                    />
+                    <span id="name-error"></span>
+                    <input
+                        id="email"
+                        class="box"
+                        type="email"
+                        placeholder="email"
+                        required
+                    />
+                    <span id="email-error"></span>
+
+                    <input
+                        id="phone"
+                        class="box"
+                        type="tel"
+                        pattern="[0-9]{10}"
+                        placeholder="điện thoại"
+                        required
+                    />
+                    <span id="phone-error"></span>
+
+                    <textarea
+                        id="message"
+                        class="box message"
+                        cols="30"
+                        rows="10"
+                        placeholder="nội dung"
+                    ></textarea>
+
+                    <button class="btn" id="btn-submit" type="submit">
+                        Gửi <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- contact section ends -->
+
+        <!-- scroll top button  -->
+
+        <a href="#home" class="top">
+            <img src="./img/scroll-top-img.png" alt="" />
+        </a>
+
+        <div id="products1"></div>
+
+        <!-- jquery cdn link  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- custom js file link  -->
+        <script src="./script.js"></script>
+        <!-- Thư viện React -->
+        <script src="https://unpkg.com/react/umd/react.development.js"></script>
+        <!-- Thư viện React-DOM -->
+        <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+        <!-- Thư viện IONICON -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
 </html>
