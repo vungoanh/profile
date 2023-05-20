@@ -180,7 +180,7 @@ phoneCheck.addEventListener('blur', function () {
 
 
 // GỬI MAIL KHI NGƯỜI DÙNG SUBMIT
-emailjs.init('TMdqRpSx2vb48Jqv3');
+emailjs.init('HUyMgpvBbBv82d6f-');
 document.getElementById('contact').addEventListener('submit', function (event) {
   event.preventDefault();
   // LẤY THÔNG TIN TỪ BIỂU MẪU
