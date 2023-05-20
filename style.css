@@ -354,17 +354,20 @@ header .navbar ul li.active a {
     transform: scale(1.2);
 }
 
+
 .contact .row {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .contact .row .content {
     flex: 1 1 30rem;
     padding: 4rem;
     padding-bottom: 0;
+
 }
 
 .contact .row form {
@@ -420,7 +423,8 @@ header .navbar ul li.active a {
 
 .contact .row .content .info h3 a {
     padding-left: 1rem;
-    width: 100%;
+    padding-right: 1rem;
+    width: 400px;
 }
 
 .contact .row .content .info h3 i {
