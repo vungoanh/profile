@@ -421,15 +421,17 @@ header .navbar ul li.active a {
     font-weight: normal;
 }
 
+
 .contact .row .content .info h3 a {
     padding-left: 1rem;
     padding-right: 1rem;
-    width: 400px;
+
 }
 
 .contact .row .content .info h3 i {
     padding-right: 1rem;
     color: var(--dark-text-clr);
+    display: inline;
 }
 
 .contact .row .content .info :hover {
